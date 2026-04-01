@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo2.Ventana"
+            stylesheets="@styles.css"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <TextField fx:id="num1" promptText="Primer Numero"/>
+    <TextField fx:id="num2" promptText="Segundo Numero"/>
+
+    <HBox>
+        <Button text="+" onAction="#sumar" styleClass="boton"/>
+        <Button text="-" onAction="#restar" styleClass="boton"/>
+        <Button text="*" onAction="#multiplicar" styleClass="boton"/>
+        <Button text="/" onAction="#dividir" styleClass="boton"/>
+    </HBox>
+    <Label fx:id="resultado" text="Resultado"/>
+</VBox>

@@ -1,0 +1,23 @@
+.numero {
+    -fx-text-fill: #333333;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+}
+
+.campo {
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 6 10;
+    -fx-font-size: 14;
+}
+
+.boton {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15;
+}

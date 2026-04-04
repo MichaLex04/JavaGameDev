@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clinica.controller.LoginController">
+    <children>
+        <Label style="-fx-font-size: 28px;" text="🏥 Sistema de Clínica" textFill="#2c3e50">
+            <VBox.margin>
+                <Insets bottom="40.0" />
+            </VBox.margin>
+        </Label>
+        <VBox spacing="15.0" styleClass="login-container">
+            <children>
+                <Label style="-fx-font-size: 16px;" text="Usuario:" />
+                <TextField fx:id="txtUsuario" promptText="Ingrese su usuario" styleClass="input-field" />
+                <Label style="-fx-font-size: 16px;" text="Contraseña:" />
+                <PasswordField fx:id="txtPassword" promptText="Ingrese su contraseña" styleClass="input-field" />
+                <Label fx:id="lblMensaje" text="Mensaje de error" visible="false" styleClass="error-message" />
+                <Button fx:id="btnLogin" onAction="#handleLogin" styleClass="login-button" text="Iniciar Sesión" />
+            </children>
+            <padding>
+                <Insets top="20.0" right="40.0" bottom="20.0" left="40.0" />
+            </padding>
+        </VBox>
+        <Label style="-fx-font-size: 12px;" text="Credenciales de prueba: admin / 1234" textFill="#7f8c8d" />
+    </children>
+    <padding>
+        <Insets top="50.0" right="50.0" bottom="50.0" left="50.0" />
+    </padding>
+</VBox>

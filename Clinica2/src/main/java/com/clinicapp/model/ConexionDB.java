@@ -1,4 +1,4 @@
-package com.clinica.model;
+package com.clinicapp.model;
 
 import java.sql.*;
 

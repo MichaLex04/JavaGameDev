@@ -1,4 +1,4 @@
-package com.clinica;
+package com.clinicapp;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

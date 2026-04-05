@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clinica.controller.MedicosController">
+    <top>
+        <VBox alignment="CENTER_LEFT">
+            <children>
+                <HBox alignment="CENTER_LEFT" spacing="20.0">
+                    <children>
+                        <Label style="-fx-font-size: 22px;" text="👨‍⚕️ Lista de Médicos" />
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button onAction="#cargarMedicos" styleClass="refresh-button" text="🔄 Actualizar" />
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets top="20.0" right="20.0" bottom="20.0" left="20.0" />
+            </padding>
+        </VBox>
+    </top>
+    <center>
+        <TableView fx:id="tableMedicos" prefHeight="500.0" prefWidth="900.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="60.0" text="ID" />
+                <TableColumn fx:id="colNombre" prefWidth="150.0" text="Nombre" />
+                <TableColumn fx:id="colApellido" prefWidth="150.0" text="Apellido" />
+                <TableColumn fx:id="colEspecialidad" prefWidth="200.0" text="Especialidad" />
+                <TableColumn fx:id="colTelefono" prefWidth="120.0" text="Teléfono" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

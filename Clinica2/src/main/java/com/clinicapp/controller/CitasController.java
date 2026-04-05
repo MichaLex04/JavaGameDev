@@ -1,4 +1,4 @@
-package com.clinica.controller;
+package com.clinicapp.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -11,7 +11,7 @@ public class CitasController {
 
     @FXML
     public void initialize() {
-        // Vista placeholder - No funcional
+        //No funcional :v
         lblMensaje.setText("📅 Gestión de Citas\n\n⚠️ FUNCIONALIDAD EN DESARROLLO\n\n" +
                 "Próximamente podrás:\n" +
                 "• Crear nuevas citas\n" +

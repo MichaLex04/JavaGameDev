@@ -1,4 +1,4 @@
-package com.clinica.controller;
+package com.clinicapp.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -17,33 +17,21 @@ public class MainController {
     @FXML private Button btnCitas;
     @FXML private Button btnMedicos;
 
-    /**
-     * Navegación a página de Clientes
-     */
     @FXML
     private void mostrarClientes(ActionEvent event) {
         cargarVista("/fxml/Clientes.fxml", event);
     }
 
-    /**
-     * Navegación a página de Citas (No funcional)
-     */
     @FXML
     private void mostrarCitas(ActionEvent event) {
         cargarVista("/fxml/Citas.fxml", event);
     }
 
-    /**
-     * Navegación a página de Médicos
-     */
     @FXML
     private void mostrarMedicos(ActionEvent event) {
         cargarVista("/fxml/Medicos.fxml", event);
     }
 
-    /**
-     * Método genérico para cargar vistas
-     */
     private void cargarVista(String fxmlPath, ActionEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));

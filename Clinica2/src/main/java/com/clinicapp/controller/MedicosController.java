@@ -1,7 +1,7 @@
-package com.clinica.controller;
+package com.clinicapp.controller;
 
-import com.clinica.model.Medico;
-import com.clinica.utils.DatabaseManager;
+import com.clinicapp.model.Medico;
+import com.clinicapp.utils.DatabaseManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -18,25 +18,18 @@ public class MedicosController {
     @FXML private TableColumn<Medico, String> colEspecialidad;
     @FXML private TableColumn<Medico, String> colTelefono;
 
-    /**
-     * Inicializa la vista de médicos
-     */
     @FXML
     public void initialize() {
-        // Configurar columnas
+
         colId.setCellValueFactory(new PropertyValueFactory<>("id"));
         colNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
         colApellido.setCellValueFactory(new PropertyValueFactory<>("apellido"));
         colEspecialidad.setCellValueFactory(new PropertyValueFactory<>("especialidad"));
         colTelefono.setCellValueFactory(new PropertyValueFactory<>("telefono"));
 
-        // Cargar datos
         cargarMedicos();
     }
 
-    /**
-     * Carga médicos desde la base de datos
-     */
     @FXML
     private void cargarMedicos() {
         ObservableList<Medico> medicosList = FXCollections.observableArrayList(

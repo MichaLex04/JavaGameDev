@@ -1,4 +1,4 @@
-package com.clinica.controller;
+package com.clinicapp.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -19,16 +19,12 @@ public class LoginController {
     @FXML private PasswordField txtPassword;
     @FXML private Label lblMensaje;
 
-    /**
-     * Maneja el evento del botón Login
-     * Credenciales de prueba: admin / 1234
-     */
+    //Credenciales de prueba: admin / 1234
     @FXML
     private void handleLogin(ActionEvent event) {
         String usuario = txtUsuario.getText();
         String password = txtPassword.getText();
 
-        // Validación simple (en producción usar BD)
         if ("admin".equals(usuario) && "1234".equals(password)) {
             mostrarMainView(event);
         } else {
@@ -37,9 +33,6 @@ public class LoginController {
         }
     }
 
-    /**
-     * Cambia a la vista principal
-     */
     private void mostrarMainView(ActionEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Main.fxml"));

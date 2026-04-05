@@ -1,4 +1,4 @@
-package com.clinica.model;
+package com.clinicapp.model;
 
 public class Cliente {
     private int id;
@@ -8,10 +8,8 @@ public class Cliente {
     private String email;
     private String fechaNacimiento;
 
-    // Constructor vacío
     public Cliente() {}
 
-    // Constructor completo
     public Cliente(int id, String nombre, String apellido, String telefono,
                    String email, String fechaNacimiento) {
         this.id = id;

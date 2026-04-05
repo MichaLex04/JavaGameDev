@@ -1,9 +1,10 @@
-module com.clinicapp.clinica2 {
+module com.clinicapp {
     requires javafx.controls;
     requires javafx.fxml;
 
-    requires org.kordamp.bootstrapfx.core;
+    requires org.kordamp.bootstrapfxcore;
+    requires java.sql;
 
-    opens com.clinicapp.clinica2 to javafx.fxml;
-    exports com.clinicapp.clinica2;
+    opens com.clinicapp to javafx.fxml;
+    exports com.clinicapp;
 }
